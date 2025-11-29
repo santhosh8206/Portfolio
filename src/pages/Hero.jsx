@@ -35,7 +35,7 @@ export default function Hero() {
             <img
               src={profileImg}
               alt="Profile"
-              className="w-56 h-56 md:w-64 md:h-64 rounded-full object-cover shadow-xl bg-white z-35"
+              className="w-56 h-56 md:w-64 md:h-64 rounded-full object-contain shadow-xl bg-white z-35"
             />
           </div>
         </div>
