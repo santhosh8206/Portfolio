@@ -2,25 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ---- utilities + safety rules ---- */
 @layer utilities {
-  @keyframes spinAround {
+  /* custom spinner animation (no tailwind.config change required) */
+  @keyframes spinAroundKey {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
 
-  .animate-spinAround {
-    animation: spinAround 4s linear infinite;
+  .animate-spin-around {
+    animation: spinAroundKey 6s linear infinite;
+  }
+
+  /* small helper if you want thicker spinner */
+  .spinner-thick {
+    border-width: 6px;
   }
 }
-* {
-  box-sizing: border-box;
-}
 
-html, body {
-  overflow-x: hidden !important;
-}
-
-img {
-  max-width: 100%;
-}
-
+/* prevent horizontal overflow issues globally */
+* { box-sizing: border-box; }
+html, body, #root { max-width: 100%; overflow-x: hidden !important; }
+img { max-width: 100%; display: block; }

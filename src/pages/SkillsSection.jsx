@@ -43,7 +43,7 @@ export default function SkillsSection() {
       </div>
 
       <p className="text-gray-600 mb-6">
-        Visualize my tech stack — toggle between a rotating logos globe and orbiting skill spheres.
+        Visualize my tech stack — toggle between a rotating logos globe 
       </p>
 
       <div className="bg-white dark:bg-gray-100 rounded-2xl p-4 ">

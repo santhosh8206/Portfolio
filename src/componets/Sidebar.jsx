@@ -1,15 +1,16 @@
 import { motion } from "framer-motion";
-import { Home, User, FolderKanban, Mail } from "lucide-react";
+import { Home, User, FolderKanban, Mail, TrendingUp } from "lucide-react";
 import { useState } from "react";
 
 export default function Sidebar() {
   const [hovered, setHovered] = useState(null);
 
   const navItems = [
-    { id: 1, icon: <Home size={22} />, label: "Home", link: "#Hero" },
+    { id: 1, icon: <Home size={22} />, label: "Home", link: "#hero" },
     { id: 2, icon: <User size={22} />, label: "About", link: "#about" },
-    { id: 3, icon: <FolderKanban size={22} />, label: "Projects", link: "#projects" },
-    { id: 4, icon: <Mail size={22} />, label: "Contact", link: "#contact" },
+    { id: 3, icon: <TrendingUp size={22} />, label: "Skills", link: "#skills" },
+    { id: 4, icon: <FolderKanban size={22} />, label: "Projects", link: "#projects" },
+    { id: 5, icon: <Mail size={22} />, label: "Contact", link: "#contact" },
   ];
 
   return (
@@ -20,7 +21,7 @@ export default function Sidebar() {
         backdrop-blur-xl
 
         /* Desktop Sidebar (vertical) */
-        md:flex-col md:w-20 md:right-0 md:top-1/3 md:h-auto md:py-6 md:gap-10
+        md:flex-col md:w-20 md:right-0 md:top-1/4 md:h-auto md:py-6 md:gap-10
 
         /* Mobile Bottom Bar */
         max-md:bottom-0 max-md:left-0 max-md:right-0 
